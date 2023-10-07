@@ -10,9 +10,9 @@
   grid-template-columns: repeat(40, 1fr);
  place-items: center;
 }
-.box {
+.square {
   height: 10px;
   width: 10px;
-  background-color: black;
+  background-color : rgb(29, 29, 29); 
   transition: all 1s;
 }

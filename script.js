@@ -12,13 +12,15 @@ function getRandomColor() {
 // Create 800 square elements and add them to the container
 for (let i = 0; i < 800; i++) {
     const box = document.createElement('div')
-    box.className = 'box'
+    box.className = 'square'
     container.appendChild(box)
     box.addEventListener('mouseenter',()=>{
         const randomColor = getRandomColor()
         box.style.backgroundColor = randomColor
-        setTimeout(() => {
-            box.style.backgroundColor='black'
-        }, 1000);
     })
+	box.addEventListener('mouseout',()=>{
+		 setTimeout(() => {
+            box.style.backgroundColor='rgb(29, 29, 29)'
+        }, 1000);
+	})
 }
