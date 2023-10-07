@@ -1,5 +1,4 @@
 //your JS code here. If required.
-// Get the container element
 const container = document.querySelector('.container');
 function getRandomColor() {
     const letters = '0123456789ABCDEF';
@@ -9,7 +8,7 @@ function getRandomColor() {
     }
     return color;
 }
-// Create 800 square elements and add them to the container
+
 for (let i = 0; i < 800; i++) {
     const box = document.createElement('div')
     box.className = 'square'
