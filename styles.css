@@ -1,1 +1,18 @@
 /*  your css code here. If applicable */
+.container {
+  width: 90vw;
+  max-width: 450px;
+  max-height: 250px;
+  height: 90vh;
+  background-color: grey;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(40, 1fr);
+ place-items: center;
+}
+.box {
+  height: 10px;
+  width: 10px;
+  background-color: black;
+  transition: all 1s;
+}
